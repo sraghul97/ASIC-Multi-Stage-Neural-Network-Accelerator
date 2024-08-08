@@ -1,0 +1,149 @@
+#------------------------------------------------------------
+#
+# Basic Synthesis Script (TCL format)
+#                                  
+# Revision History                
+#   1/15/03  : Author Shane T. Gehring - from class example
+#   2/09/07  : Author Zhengtao Yu      - from class example
+#   12/14/07 : Author Ravi Jenkal      - updated to 180 nm & tcl
+#
+#------------------------------------------------------------
+#---------------------------------------------------------
+# Read in Verilog file and map (synthesize) onto a generic
+# library.
+# MAKE SURE THAT YOU CORRECT ALL WARNINGS THAT APPEAR
+# during the execution of the read command are fixed 
+# or understood to have no impact.
+# ALSO CHECK your latch/flip-flop list for unintended 
+# latches                                            
+#---------------------------------------------------------
+read_verilog $::env(RTL_FILES)
+Loading db file '/afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/nangate/NangateOpenCellLibrary_PDKv1_2_v2008_10/liberty/520/NangateOpenCellLibrary_PDKv1_2_v2008_10_slow_nldm.db'
+Loading db file '/mnt/apps/public/COE/synopsys_apps/syn/S-2021.06-SP3/libraries/syn/dw_foundation.sldb'
+Loading db file '/mnt/apps/public/COE/synopsys_apps/syn/S-2021.06-SP3/libraries/syn/gtech.db'
+Loading db file '/mnt/apps/public/COE/synopsys_apps/syn/S-2021.06-SP3/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary_PDKv1_2_v2008_10_slow_nldm'
+  Loading link library 'gtech'
+Loading verilog file '/afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v
+Warning:  /afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v:388: unsigned to signed assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v:389: unsigned to signed assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v:394: unsigned to signed assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v:395: unsigned to signed assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v:396: unsigned to signed assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v:397: unsigned to signed assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v:401: unsigned to signed assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v:402: unsigned to signed assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v:403: unsigned to signed assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v:404: unsigned to signed assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v:411: unsigned to signed assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v:412: unsigned to signed assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v:413: unsigned to signed assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v:414: unsigned to signed assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v:421: unsigned to signed assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v:422: unsigned to signed assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v:423: unsigned to signed assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v:432: unsigned to signed assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v:433: unsigned to signed assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v:442: unsigned to signed assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v:443: unsigned to signed assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v:452: unsigned to signed assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v:453: unsigned to signed assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v:463: unsigned to signed assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v:464: unsigned to signed assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v:492: unsigned to signed assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v:497: unsigned to signed assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v:513: unsigned to signed assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v:518: unsigned to signed assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v:526: signed to unsigned part selection occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v:528: signed to unsigned part selection occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v:531: signed to unsigned part selection occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v:533: signed to unsigned part selection occurs. (VER-318)
+Warning: Could not open default SVF file /afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/synthesis/svf/default.svf for writing.
+
+Statistics for case statements in always block at line 139 in file
+	'/afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           141            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine MyDesign line 94 in file
+		'/afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v'.
+=========================================================================================
+|         Register Name         |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=========================================================================================
+| output_sram_read_address_reg  | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+| weights_sram_read_address_reg | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+|  input_sram_read_address_reg  | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+=========================================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 131 in file
+		'/afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  current_state_reg  | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 354 in file
+		'/afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/dut.v'.
+==========================================================================================
+|         Register Name          |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+==========================================================================================
+|     CurrentRowCounter_reg      | Flip-flop |   6   |  Y  | N  | N  | N  | N  | N  | N  |
+|            R2b_reg             | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|       NextInputData_reg        | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|            MAC2_reg            | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|            MAC3_reg            | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|            R8a_reg             | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|   output_sram_write_data_reg   | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|            R3b_reg             | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|            R3a_reg             | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|            R7a_reg             | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|       NvalueCounter_reg        | Flip-flop |   7   |  Y  | N  | N  | N  | N  | N  | N  |
+|            R8b_reg             | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|           Nvalue_reg           | Flip-flop |   6   |  Y  | N  | N  | N  | N  | N  | N  |
+|            R6a_reg             | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|            R7b_reg             | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|            R5a_reg             | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|            R6b_reg             | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|       NvalueAddress_reg        | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|            R5b_reg             | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|     OutputSramSlotFlag_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|             W9_reg             | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|            R4b_reg             | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|             W7_reg             | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|            R4a_reg             | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|             W6_reg             | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|             W8_reg             | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|            R2a_reg             | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|            R1a_reg             | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|             W5_reg             | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|             W3_reg             | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|            R1b_reg             | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|             W1_reg             | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|             W4_reg             | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|             W2_reg             | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| weights_sram_write_enable_reg  | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    CurrentColumnCounter_reg    | Flip-flop |   6   |  Y  | N  | N  | N  | N  | N  | N  |
+|  output_sram_write_enable_reg  | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|            MAC4_reg            | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+|       MaxPoolResult_reg        | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|  input_sram_write_enable_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+| output_sram_write_addresss_reg | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+|          dut_busy_reg          | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|            MAC1_reg            | Flip-flop |  20   |  Y  | N  | N  | N  | N  | N  | N  |
+==========================================================================================
+Presto compilation completed successfully.
+Current design is now '/afs/unity.ncsu.edu/users/r/rsriniv7/564/Project/projectFall2022/rtl/MyDesign.db:MyDesign'
+Loaded 1 design.
+Current design is 'MyDesign'.
+MyDesign
